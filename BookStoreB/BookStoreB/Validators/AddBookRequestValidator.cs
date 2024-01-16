@@ -19,6 +19,8 @@ namespace BookStoreB.Validators
             RuleFor(x => x.AuthorId)
                  .NotNull()
                  .NotEmpty();
+                 
+
         }
     }
 }
