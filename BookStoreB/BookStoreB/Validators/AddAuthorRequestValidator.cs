@@ -8,12 +8,8 @@ namespace BookStoreB.Validators
     {
         public AddAuthorRequestValidator()
         {
-            RuleFor(x => x.Name)
-                .NotNull().WithMessage("Ime zaduljitelno:")
-                .NotEmpty()
-                .MinimumLength(2)
-                .MaximumLength(10);
             RuleFor(x => x.Bio)
+                .NotNull()
                 .NotEmpty();
         }
     }
